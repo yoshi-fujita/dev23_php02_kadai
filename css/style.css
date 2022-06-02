@@ -1,0 +1,159 @@
+html {
+  font-size: 62.5%; /* 16px × 62.5% = 10px*/
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN,
+    "メイリオ", Meiryo, sans-serif;
+  font-size: 1.6rem;
+  color: #222;
+}
+a:visited {
+  color: #222;
+}
+.text-center {
+  text-align: center;
+  background-size: cover;
+  background-position: center top;
+}
+
+.title_area {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+.title_area img {
+  padding: 2px;
+  height: 30px;
+}
+
+.title_area h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 20px 0 0;
+}
+
+.title_area a {
+  padding: 10px;
+}
+
+h3 {
+  position: absolute;
+  top: 65px;
+  left: 20px;
+  padding: 10px 12px 10px 13px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#photo_select {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+#photo_submit {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+#preview{
+  display: flex;
+  flex-wrap: wrap;
+}
+#preview img{
+  height: 75px;
+  padding: 5px;
+}
+
+#album{
+  /* position: absolute;
+  top: 240px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+#album img{
+  height: 200px;
+  padding: 5px;
+}
+
+.room_set {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+
+.room_create {
+  position: absolute;
+  top: 110px;
+  left: 20px;
+}
+
+.new_room {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+
+.new_room p {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.new_room button {
+  margin: 10px 0 0 0;
+}
+
+.create_submit  {
+  margin: 5px 0 0 0;
+}
+
+.avatar {
+  margin: 5px 2px;
+}
+
+.help {
+  margin: 10px;
+  line-height: 2;
+}
+
+.init p {
+  padding: 10px;
+}
+
+.input {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  padding: 10px;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: absolute;
+  top: 55vh;
+  /* left: 40vw; */
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.container p {
+  margin: 1px;
+  padding: 1px 5px;
+  border-radius: 5px;
+  border: 1px solid #222;
+  line-height: 1.2;
+  background-color: #fff;
+  font-size: 12px;
+}
