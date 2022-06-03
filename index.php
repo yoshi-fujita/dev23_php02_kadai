@@ -24,7 +24,7 @@
     </div>
 
     <form method="POST" action="check.php" class="room_set">
-      <input type="text" name="room"/>
+      <input type="text" name="room" required/>
       <input type="submit" value="共有ルームに入る"></input>
     </form>
     
