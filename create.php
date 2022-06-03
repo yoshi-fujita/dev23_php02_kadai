@@ -23,11 +23,16 @@
       >
     </div>
 
+    <?php
+      date_default_timezone_set('Asia/Tokyo');
+      $h_start = date("H:i");
+    ?>
+
     <form action="create_set.php" method="post" class="new_room">
-      <p>room名&nbsp; <input type="text" name="room"/></p>
-      <p>半径　　 <input type="number" name="radius"/> メートル</p>
-      <p>開始時刻 <input type="time" name="start"/></p>
-      <p>終了時刻 <input type="time" name="end"/> 　開始から12時間</p>
+      <p>room名&nbsp; <input type="text" name="room" required/></p>
+      <p>半径 (m) <input type="number" name="radius" value="50" required/></p>
+      <p>開始時刻 <input type="time" name="start" value=<?php echo $h_start; ?> required/>
+      <p>終了時刻 <input type="time" name="end" value="00:00" required/></p>
       <input type="submit" value="共有ルームをつくる"/>
     </form>
 
