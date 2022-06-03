@@ -17,7 +17,7 @@
       <a href="index.php"><img src="image/mappin.png" alt="アイコン" /></a>
       <h2>imakokoShare</h2>
       <a
-        href="https://github.com/yoshi-fujita/dev23_js03_kadai/blob/main/README.md"
+        href="https://github.com/yoshi-fujita/dev23_php02_kadai/blob/main/README.md"
         target="_blank"
         >help</a
       >
