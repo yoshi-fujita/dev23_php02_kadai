@@ -1,4 +1,10 @@
 <?php
+header('Expires: Tue, 1 Jan 2019 00:00:00 GMT');
+header('Last-Modified:'. gmdate( 'D, d M Y H:i:s' ). 'GMT');
+header('Cache-Control:no-cache,no-store,must-revalidate,max-age=0');
+header('Cache-Control:pre-check=0,post-check=0',false);
+header('Pragma:no-cache');
+
 session_start();
 
 $room_id = $_SESSION['room_id'];
@@ -97,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="js/photo.js"></script>
 
     <?php
-    // SQL 上の画像を表示する
+    // SQL で画像を取得して表示する
     $stmt = $pdo->prepare("SELECT * FROM imakoko_share_data WHERE room_id = :room_id ORDER BY data_id DESC");
     $stmt->bindParam(':room_id', $room_id, PDO::PARAM_STR);
     $status = $stmt->execute();

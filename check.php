@@ -1,4 +1,10 @@
 <?php
+header('Expires: Tue, 1 Jan 2019 00:00:00 GMT');
+header('Last-Modified:'. gmdate( 'D, d M Y H:i:s' ). 'GMT');
+header('Cache-Control:no-cache,no-store,must-revalidate,max-age=0');
+header('Cache-Control:pre-check=0,post-check=0',false);
+header('Pragma:no-cache');
+
 session_start();
 
 //1. POSTデータ取得
