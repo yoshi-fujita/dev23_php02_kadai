@@ -25,7 +25,7 @@ $status = $stmt->execute();
 //３．room の存在チェック
 
 // 現在地、現在時刻、指定room名で有効なroomがあるかどうかを確認し、なければエラーメッセージを出してトップページに戻る。
-// 有効な room があれば、ローカルストレージにその room_id を保存時して browse.php に進む
+// 有効な room があれば、セッション変数にその room_id を保存時して browse.php に進む
 
 
 
