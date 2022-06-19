@@ -44,7 +44,7 @@
       });
     </script>
     <script
-      src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AlA_wWmDq6XGusZi013gjk7RqViYPAU2gsbcoYc9TilhoGqBMZAvZl2-ySPbpD2m"
+      src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=***********"
       async
       defer
     ></script>
